@@ -9,3 +9,5 @@ end
 grocery_list.push("rice")
 
 printlist(grocery_list)
+
+puts "Total items on the list is #{grocery_list.count}"
