@@ -1,4 +1,4 @@
-grocery_list = ["carrots", "apples", "bananas", "toilet paper", "instant coffee"]
+grocery_list = ["carrots", "apples", "bananas", "toilet paper", "instant coffee", "salmon"]
 
 def printlist(x)
 	x.each do |y|
@@ -21,3 +21,6 @@ end
 puts grocery_list[1]
 
 printlist(grocery_list.sort)
+
+grocery_list.delete("salmon")
+puts grocery_list
