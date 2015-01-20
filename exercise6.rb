@@ -19,3 +19,5 @@ else
 end
 
 puts grocery_list[1]
+
+printlist(grocery_list.sort)
