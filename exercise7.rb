@@ -16,11 +16,15 @@ printlist(students)
 
 puts students.keys
 
-students.each do |x, y|
-	expand = y *= 1.05
-	puts "#{x}: #{expand.to_i} students"
-end
+students.each {|x,y| students[x] = (y *= 1.05).to_i}
 
 students.delete(:cohort2)
 
 printlist(students)
+
+total = students.values.inject(0) {|sum, population| sum + population}
+puts total
+
+var = 0
+students.values.each {|y| var += y}
+puts var
