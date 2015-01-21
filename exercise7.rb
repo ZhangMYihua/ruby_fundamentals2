@@ -16,3 +16,8 @@ printlist(students)
 
 puts students.keys
 
+students.each do |x, y|
+	expand = y *= 1.05
+	puts "#{x}: #{expand.to_i} students"
+end
+
