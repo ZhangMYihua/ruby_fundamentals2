@@ -4,6 +4,8 @@ students = {
 	:cohort3 => 22,
 }
 
+students.merge!(:cohort4 => 43)
+
 def printlist(list)
 	list.each do |x, y|
 		puts "#{x}: #{y} students"
@@ -11,3 +13,6 @@ def printlist(list)
 end
 
 printlist(students)
+
+puts students.keys
+
