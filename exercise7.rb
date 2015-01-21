@@ -21,3 +21,6 @@ students.each do |x, y|
 	puts "#{x}: #{expand.to_i} students"
 end
 
+students.delete(:cohort2)
+
+printlist(students)
